@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- style sheet -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Bulma library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" /> 
+        <!-- jQuery library --> 
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <title class="title size-2">Celebrity Trivia</title>
+    </head>
+<body>
+    <nav class="Columns has-background-dark has-text-light">
+        <div class="column">
+            <h2 class="is-size-1 has-text-weight-bold has-text-centered">Celebrity Trivia</h2>
+        </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-background"></div>
+    <!-- Modal content -->
+        <div class="modal-content has-background-link has-text-white">
+            <span class="close topright">&times;</span>
+            <p>Your celeb is not famous.. 😅  Please try again.</p>
+        </div>
+    </div>
+
+    <div class="rows py-2">
+
+        <div class="has-text-centered py-4 ">
+            <div class="card form-container">
+                <h4 class="card-header has-text-weight-bold is-size-3">Search for a Movie Star:</h4>
+                <label class="label" for="actor"></label>
+                    <div class = "card-content control has-icons-left has-icons-right">
+                        <input class="input is-success" id="actor-input" type="text" placeholder="Text input" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                    </div>
+                    
+        
+                    
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link submit-btn" id="submit-btn">Get Info!</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-warning clear-btn" id="clear-btn">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <div class= "py-6 ">
+            <div class="card is-size-4 mx-2" id="favorites">
+                <h4 class="card-header has-text-darl has-text-weight-bold">History:</h4>
+            </div>
+            <ul class="column mx-6" id="favorites-list">
+            </ul>
+            <button type="submit" id="clear-favorites-btn" class="button is-danger">Clear History</button>
+            </div>
+            <ul class="column mx-6" id="favorites-list">
+            </ul>
+        </div>
+
+        <div id="main-content" class="py-2 my-2 mt-2">
+            <div class="card pic-container">
+            </div>
+            <div class="card-content main-container">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+
