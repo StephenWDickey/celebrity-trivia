@@ -123,6 +123,15 @@ var clear = function() {
             div.remove();
 
         });
+
+        inputEl.value = '';
+
+    }
+
+    else {
+        
+        inputEl.value = '';
+
     }
     
 }
